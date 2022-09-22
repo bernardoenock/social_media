@@ -1,0 +1,11 @@
+* {
+    font-family: Lato, "Source Sans Pro";
+}
+
+h1 {
+    color: red;
+}
+
+#navbar img {
+    width: 100px;
+}
