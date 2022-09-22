@@ -56,11 +56,6 @@ return [
             'throw' => false,
         ],
 
-        'posts' => [
-            'driver' => 'local',
-            'root' => storage_path(),
-        ]
-
     ],
 
     /*
