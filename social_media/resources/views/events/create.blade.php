@@ -17,7 +17,7 @@
 
         <div class="form-group">
             <label for="autor">Selecione a categoria</label>
-            <select name="category" id="category" class="form-control" placeholder="Selecione a categoria">
+            <select name="category" id="category" class="form-control form-control-lg" placeholder="Selecione a categoria">
                 <option value="post">Post</option>
                 <option value="news">Noticia</option>
                 <option value="ad">Anuncio</option>
