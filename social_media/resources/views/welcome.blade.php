@@ -16,6 +16,7 @@
                   <div id="posts-container" class="column">
                         @foreach($posts as $post)
                         <div id="card-post" class="card col-md-12">
+                              
                               <div id="avatar-container">
                                     <img src="/img/graphics/avatar_default.png" alt="Avatar Default">
                                     <div id="avatar-info">
@@ -33,6 +34,7 @@
                                     <p>{{$post->publication}}</p>
                                     <img id="post-img" src="/img/posts/{{ $post->image }}" alt="{{ $post->publication }}">
                               </div>
+                              
                         </div>
                         @endforeach
                   </div>
