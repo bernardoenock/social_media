@@ -1,6 +1,6 @@
 <p align="center"><a href="https://github.com/bernardoenock" target="_blank"><img src="social_media/public/img/graphics/LOGO.png" width="400"></a></p>
 
-<h1 align="center">Teste Tecnico: LinkLei</h1>
+<h1 align="start">Teste Tecnico: LinkLei</h1>
 
 ## Table of Contents
 
