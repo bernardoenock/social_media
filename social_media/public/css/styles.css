@@ -2,8 +2,29 @@
     font-family: Lato, "Source Sans Pro";
 }
 
-h1 {
-    color: red;
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    background: rgb(233, 236, 245);
+}
+
+header {
+    background: linear-gradient(
+        90deg,
+        rgb(233, 236, 245) 0%,
+        rgb(103, 133, 150) 35%,
+        rgb(41, 50, 93) 100%
+    );
+    box-shadow: 1px 5px 5px black;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 #navbar img {
