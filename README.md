@@ -8,7 +8,7 @@ docker compose up
 
 ## Rodar Servidor
 
-_server/_
+_social_media/_
 
 composer update
 
