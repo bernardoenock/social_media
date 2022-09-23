@@ -23,7 +23,7 @@
 - Na raiz suba o Banco de Dados com:
   `docker compose up`
 
-- Copie o .env.example:
+- Dentro de `social_media/` copie o .env.example:
   `cp .env.example .env`
 
 - Atualize o composer:
