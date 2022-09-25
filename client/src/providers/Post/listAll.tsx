@@ -15,6 +15,7 @@ export const ListPostProvider: React.FC<{ children: React.ReactNode }> = ({
     const response = await linkLeiAPI
       .get("/api/posts")
       .then((res) => {
+        console.log(res);
         return res.data;
       })
       .catch((err) => console.log(err));
