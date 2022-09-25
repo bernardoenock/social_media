@@ -3,7 +3,9 @@ import styled, { createGlobalStyle } from "styled-components";
 export const Body = styled.div`
   width: 100vw;
   height: auto;
-  background-color: ${({ theme }) => theme.backgroundColors.generalBackground};
+  /* background-color: ${({ theme }) =>
+    theme.backgroundColors.generalBackground}; */
+  background-color: #e9ecf5;
 `;
 
 export const GlobalStyle = createGlobalStyle`
