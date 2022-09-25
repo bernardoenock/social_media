@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
 
-Route::get('/post/create', [PostController::class, 'create']);
 
-Route::post('/posted', [PostController::class, 'store']);
+// Route::get('/post/create', [PostController::class, 'create']);
 
-Route::get('/feed', function () {
-    return view('feed');
-});
+// Route::post('/posted', [PostController::class, 'store']);
+
+// Route::get('/feed', function () {
+//     return view('feed');
+// });
 
