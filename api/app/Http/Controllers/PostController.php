@@ -9,10 +9,8 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index() {
-        $posts = Post::all();
-
-        return view('welcome', ['posts' => $posts]);
-
+        
+        return Post::get();
     }
 
     public function create() {
@@ -42,6 +40,6 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect('/');
+        // return redirect('/');
     }
 }
