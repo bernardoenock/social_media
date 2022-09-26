@@ -14,7 +14,8 @@
 - Laravel 8
 - PHP 7.2+;
 - MySQL 5.6+;
-- Compilação JS do Laravel
+- React com TS
+- libs uteis do React
 
 ## Iniciar a aplicação
 
@@ -23,7 +24,9 @@
 - Na raiz suba o Banco de Dados com:
   `docker compose up`
 
-- Dentro de `social_media/` copie o .env.example:
+## Iniciar API
+
+- Dentro de `api/` copie o .env.example:
   `cp .env.example .env`
 
 - Atualize o composer:
@@ -41,11 +44,19 @@ php artisan migrate --seed
 php artisan storage:link
 ```
 
-- Rodar a aplicação localmente:
+- Rodar a API localmente:
 
 ```
 php artisan serve
 ```
+
+## Iniciar Front End
+
+- Dentro de `client/` rode:
+  `yarn` ou `yarn install`
+
+- Depois inicie com:
+  `yarn start`
 
 # Sobre o teste
 

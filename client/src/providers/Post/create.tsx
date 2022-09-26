@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 import { linkLeiAPI } from "../../services/urls.api";
 
-import { useLoad } from "../Loading";
+// import { useLoad } from "../Loading";
 
 type IPostTypeContext = {
   createPost: (formData: any) => Promise<void>;
