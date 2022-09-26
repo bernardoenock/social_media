@@ -15,6 +15,8 @@ import { useState } from "react";
 
 import { linkLeiAPI } from "../../../services/urls.api";
 
+import imgIcon from "../../../assets/icons/btn_image.svg";
+
 interface IHandleModal {
   handleModal: () => void;
 }
@@ -54,43 +56,53 @@ const CreatePost = ({ handleModal }: IHandleModal) => {
 
   return (
     <S.Centralize>
-      <form onSubmit={handleCreatePost}>
+      <S.ContainerForm onSubmit={handleCreatePost}>
         <S.TopForm>
           <h3>Criar post</h3>
           <CloseModalBtn type="button" onClick={handleModal} />
         </S.TopForm>
         <S.ContainerInputs>
-          <input
-            type="text"
-            value={autor}
-            onChange={(event) => {
-              setAutor(event.target.value);
-            }}
-          />
+          <S.SectionInput>
+            <input
+              type="text"
+              value={autor}
+              onChange={(event) => {
+                setAutor(event.target.value);
+              }}
+              placeholder="Autor do Post"
+            />
+          </S.SectionInput>
+          <S.SectionInput>
+            <select
+              onChange={(event) => {
+                setCategory(event.target.value);
+              }}
+            >
+              <option value="">Selecione a Categoria</option>
+              <option value="Post">Post</option>
+              <option value="Artigo">Artigo</option>
+              <option value="Evento">Evento</option>
+            </select>
+          </S.SectionInput>
+          <S.SectionInput>
+            <textarea
+              value={publication}
+              onChange={(event) => {
+                setPublication(event.target.value);
+              }}
+              placeholder="Escrever publicação."
+            />
+          </S.SectionInput>
+          <S.ContainerBtn>
+            <S.ContainerImg>
+              <input type="file" onChange={changeHandler}></input>
+            </S.ContainerImg>
 
-          <select
-            onChange={(event) => {
-              setCategory(event.target.value);
-            }}
-          >
-            <option value="">Selecione uma Categoria</option>
-            <option value="Post">Post</option>
-            <option value="Artigo">Artigo</option>
-            <option value="Evento">Evento</option>
-          </select>
-
-          <textarea
-            value={publication}
-            onChange={(event) => {
-              setPublication(event.target.value);
-            }}
-          />
-
-          <input type="file" onChange={changeHandler} />
-
-          <button type="submit">Postar</button>
+            <button type="submit">PUBLICAR</button>
+          </S.ContainerBtn>
         </S.ContainerInputs>
-      </form>
+        <S.BottomForm></S.BottomForm>
+      </S.ContainerForm>
     </S.Centralize>
   );
 };

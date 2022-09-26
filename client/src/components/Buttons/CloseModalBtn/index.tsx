@@ -12,7 +12,7 @@ export const CloseModalBtn: React.FC<IButtonProps> = ({ ...rest }) => {
   return (
     <ButtonModal>
       <button {...rest}>
-        <IoIosClose size="1.5rem" color="#ADB5BD" />
+        <IoIosClose size="1.5rem" color="#fcfdff" />
       </button>
     </ButtonModal>
   );
