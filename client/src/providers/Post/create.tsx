@@ -4,11 +4,11 @@ import { toast } from "react-toastify";
 
 import { linkLeiAPI } from "../../services/urls.api";
 
-import { ICreatePosts } from "../../interfaces/post";
+import { ICreatePostsProvider } from "../../interfaces/post";
 import { useLoad } from "../Loading";
 
 type IPostTypeContext = {
-  createPost: (data: ICreatePosts, image: File) => Promise<void>;
+  createPost: (data: ICreatePostsProvider, image: File) => Promise<void>;
 };
 
 const initialValue = {
@@ -25,9 +25,16 @@ export const CreatePostProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const { hiddenLoad } = useLoad();
 
-  const createPost = async (data: ICreatePosts, image: File) => {
+  const createPost = async (data: ICreatePostsProvider, image: File) => {
+    const formData = new FormData();
+
+    formData.append("autor", data.autor);
+    formData.append("category", data.category);
+    formData.append("publication", data.publication);
+    formData.append("image", image);
+
     await linkLeiAPI
-      .post("/api/posts", { ...data, image })
+      .post("/api/posts", formData)
       .then((res) => {
         console.log(res);
         toast.success("Post Enviado!");

@@ -37,7 +37,6 @@ class PostController extends Controller
             
             $imageName = Str::random().'.'.$request->image->getClientOriginalExtension();
             Storage::disk('public')->putFileAs('post/image', $request->image,$imageName);
-            // Storage::url(Setting::query()->first()->putFileAs('post/image', $request->image,$imageName));
             Post::create($request->post()+['image'=>$imageName]);
 
             return response()->json([

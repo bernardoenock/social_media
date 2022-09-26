@@ -13,3 +13,9 @@ export interface ICreatePosts {
   category?: string;
   publication?: string;
 }
+
+export interface ICreatePostsProvider {
+  autor: string | Blob;
+  category: string | Blob;
+  publication: string | Blob;
+}

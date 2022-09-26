@@ -5,8 +5,7 @@ import { ToastContainer } from "react-toastify";
 import Loader from "./components/Loader";
 import { useLoad } from "./providers/Loading";
 
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Home from "./pages/Home";
 
 function App() {
   const { isLoad } = useLoad();
@@ -28,9 +27,7 @@ function App() {
           />
           <GlobalStyle />
           <Loader isLoad={isLoad} />
-          <Header />
-          <Main />
-          <h1>LinkLei</h1>
+          <Home />
         </Body>
       </Theme>
     </>

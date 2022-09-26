@@ -65,3 +65,9 @@ export const ContainerCategory = styled.div`
     text-align: center;
   }
 `;
+
+export const ConstainerPubli = styled.div`
+  img {
+    width: 100px;
+  }
+`;
