@@ -31,7 +31,10 @@ const PostCard: React.FC<{ post: IPostsRes }> = ({ post }) => {
       </S.ContainerCategory>
 
       <S.ConstainerPubli>
-        <p>{post.publication}</p>
+        <S.ContainerTextPubli>
+          <p>{post.publication}</p>
+        </S.ContainerTextPubli>
+
         <img
           src={`http://localhost:8001/storage/post/image/${post.image}`}
           alt={`${post.publication}`}

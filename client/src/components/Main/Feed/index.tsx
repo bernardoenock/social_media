@@ -25,7 +25,6 @@ const Feed: React.FC = () => {
   return (
     <>
       <S.FeedContainer>
-        <h1>Component CardPost</h1>
         <div>
           {loadding ? (
             <LoaderLocalComponent />

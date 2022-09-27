@@ -4,12 +4,15 @@ export const CardPostContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 500px;
 
   background: #fff;
   border: 1px solid #e7ebf2;
 
   padding: 15px 20px 10px;
   margin-bottom: 10px;
+
+  border-radius: 3px;
 `;
 
 export const TopPostCard = styled.div`
@@ -57,17 +60,44 @@ export const ContainerCategory = styled.div`
   justify-content: start;
   width: 100%;
 
+  margin: 1rem;
+
+  padding-left: 1rem;
+
   img {
     width: 20px;
   }
 
   p {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #29325d;
     text-align: center;
+    margin-left: 0.5rem;
   }
 `;
 
 export const ConstainerPubli = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+
   img {
-    width: 100px;
+    width: 100%;
+  }
+`;
+
+export const ContainerTextPubli = styled.div`
+  display: flex;
+  align-items: start;
+  text-align: start;
+  width: 100%;
+  p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+    margin: 1rem 0 1rem 0;
   }
 `;

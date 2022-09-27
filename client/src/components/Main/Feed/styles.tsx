@@ -5,4 +5,6 @@ export const FeedContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-top: 1rem;
 `;
