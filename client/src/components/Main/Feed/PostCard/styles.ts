@@ -13,6 +13,10 @@ export const CardPostContainer = styled.div`
   margin-bottom: 10px;
 
   border-radius: 3px;
+
+  @media screen and (max-width: 990px) {
+    width: 300px;
+  }
 `;
 
 export const TopPostCard = styled.div`
@@ -23,6 +27,13 @@ export const TopPostCard = styled.div`
   img {
     width: 50px;
     border-radius: 50%;
+  }
+
+  @media screen and (max-width: 990px) {
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 `;
 
@@ -44,6 +55,16 @@ export const CardAutorInfo = styled.div`
     font-size: 0.7rem;
     color: #666;
   }
+
+  @media screen and (max-width: 990px) {
+    margin: 0 0rem 0 0.5rem;
+    h3 {
+      font-size: 0.9rem;
+    }
+    span {
+      font-size: 0.6rem;
+    }
+  }
 `;
 
 export const InfoIcons = styled.div`
@@ -52,6 +73,9 @@ export const InfoIcons = styled.div`
   align-items: center;
   margin-left: 1rem;
   width: 20%;
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
 `;
 
 export const ContainerCategory = styled.div`
@@ -74,6 +98,10 @@ export const ContainerCategory = styled.div`
     color: #29325d;
     text-align: center;
     margin-left: 0.5rem;
+  }
+
+  @media screen and (max-width: 990px) {
+    margin: 0.5rem 0 0 -0.5rem;
   }
 `;
 

@@ -10,4 +10,8 @@ export const ContainerHeader = styled.header`
   padding-right: 0.5rem;
   background-color: ${({ theme }) => theme.backgroundColors.headerBackground};
   border-bottom: 2px solid ${({ theme }) => theme.borders.headerBorder};
+
+  img {
+    width: 100px;
+  }
 `;

@@ -98,8 +98,6 @@ export const SectionInput = styled.div`
 `;
 
 export const ContainerImg = styled.div`
-  margin-left: 2.5rem;
-
   input {
     color: transparent;
   }
@@ -127,7 +125,9 @@ export const ContainerImg = styled.div`
 
 export const ContainerBtn = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 
   button {
     background: #6c80be;
@@ -138,9 +138,22 @@ export const ContainerBtn = styled.div`
     color: #fff;
 
     padding: 5px 8px;
+
+    width: 100px;
+
+    margin: 0 6rem 0 0;
   }
 
-  padding-right: 3rem;
+  padding: 0 0 0 6rem;
+
+  @media screen and (max-width: 990px) {
+    flex-direction: column;
+    margin-left: 1rem;
+
+    button {
+      margin: -1.3rem 0 0 0;
+    }
+  }
 `;
 
 export const BottomForm = styled.div`

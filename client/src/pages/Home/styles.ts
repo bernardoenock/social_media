@@ -30,4 +30,8 @@ export const ContainerBtn = styled.div`
 
     padding: 5px 8px;
   }
+
+  @media screen and (max-width: 990px) {
+    width: 300px;
+  }
 `;
