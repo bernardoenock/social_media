@@ -58,8 +58,3 @@ php artisan serve
 - Depois inicie com:
   `yarn start`
 
-# Sobre o teste
-
-A oportunidade foi dada a mim por uma indicação da [Kenzie](https://kenzie.com.br/) na quinta feira dia 15 de setembro, porem estava com uma viajem programada e voltaria ao meu computador na segunda, para resolver esse problema, consegui um notebook da positivo, configurei e fui conhecer o laravel, para ver se conseguiria fazer o teste, estudei nesse computador ate segunda, tentei começar o teste, porem o notebook não aguentou. Começei o teste oficialmente na segunda.
-
-Foram dias de muito aprendizado, independente do resultado do porcesso seletivo, agradeço a oportunidade e o conhecimento adiquirido.
